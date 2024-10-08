@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula11</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<script>
+
+/*
+tudo em minúsculo
+objeto.metodo   
+
+
+window.alert("Boa noite");
+alert ("Ola usuario!!");
+document.write ("Boa noite galerinha");
+window.confirm("aceitar cookies?");
+window.prompt("Digite seu nome");
+
+ Variavel no javacript não é tipada, ou seja.
+não preciso definir o tipo de variável 
+
+var n;
+n=10;
+alert("Resultado: "+n);
+n ="nome";
+alert("Resultado:" +n);
+n=17.62
+alert("Resultado:" +n);
+*/
+// Vamos entrar com dois número e 
+// multiplica-los?
+
+/*
+
+var n1, n2, total
+n1=prompt("Digite o primeiro número:");
+n2=prompt("Digite o segundo número:");
+total = n1* n2;
+alert("Total: " + total);
+
+// Vamos entrar com dois números e
+// somá-los?
+
+var n1, n2, total
+n1=prompt("Digite o primeiro número:");
+n2=prompt("Digite o segundo número:");
+total = n1 + n2;
+alert("Total: " + total);
+
+// Como resolver?
+// Utilizando a função parseInt. Existe também
+// a função parseFloat.
+
+var n1, n2, total
+n1=prompt("Digite o primeiro número:");
+n1=parseInt(n1);
+n2=prompt("Digite o segundo número:");
+n2=parseInt(n2);
+
+total = n1 + n2;
+alert("Total: " + total);   
+*/
+//Exercicio 1: Dado 3 números, calcule a média
+
+var  n1, n2,n3, media
+n1=prompt("Digite o primeiro número:");
+n1= Number .parseFloat (n1);
+n2=prompt("Digite segundo número"); 
+n2=parseFloat(n2);
+n3=prompt("Digite o terceiro número:");
+n3=parseFloat(n3);
+media = (n1+n2+n3)/3;
+alert("Média" +media);
+alert("A média de "+ n1 + " com " + n2 + " com " + n3 + " e igual a " + media);
+
+//Trabalhando com literal string
+//Inicia-se com crase
+alert(`A média de ${n1} com ${n2} com ${n3} é igual à ${media}`);    
+
+// Vamos trabalhar com a variável string
+var nome;
+nome = prompt("Digite o seu nome: ");
+document.write(nome+'<br>');
+document.write(nome .toUpperCase ()+ '<br>' );
+document.write(nome .toLowerCase()+ '<br>' );
+document.write("Nome tem:" +nome.length + "caracteres" );
+
+// Dado um número, exiba se é
+// Positivo ou negativo
+// Trabalhando com o if()
+
+var n;
+n=prompt("Digite um número: ");
+n=parseFloat(n);
+if(n > 0){
+    alert("Número positivo");
+} else{
+    alert("Número negativo");
+}
+
+</script>
+
+
+
+
+</body>
+</html>
